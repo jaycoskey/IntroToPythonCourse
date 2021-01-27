@@ -1,0 +1,18 @@
+# After a ball is thrown upward at t = 0 (seconds),
+# from an initial height of 5 feet, and an upwards velocity of 40 (feet/sec),
+# find the height of a ball at t = 3 (seconds).
+#
+# Use the formula h(t) = (1/2) * g * t**2 + v_0 * t + h_0
+h_0 = 5    # feet
+v_0 = 50   # feet/sec
+g   = -32  # gravity (negative = downward)
+t   = 3
+
+half_g      = g / 2
+t_squared   = t * t
+h_acc       = half_g * t_squared
+
+h_vel       = v_0 * t
+
+h_acc_vel   = h_acc + h_vel
+h_at_t_eq_3 = h_acc_vel + h_0

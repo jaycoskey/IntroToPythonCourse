@@ -1,0 +1,20 @@
+# Find the positive root of the quadratic function f(x) = x**2 - x - 12.
+# Unary operator: sqrt
+# Binary operators: +, -, *, /
+#
+a = 1    # Coefficient of x**2
+b = -1   # Coefficient of x
+c = -12  # Constant term
+
+d0 = b * b
+d1 = a * c
+d2 = 4 * d1
+descriminant = d0 - d2
+
+n0 = -1 * b
+n1 = sqrt descriminant
+numerator = n0 + n1
+
+denominator = 2 * a
+
+root = numerator / denominator
