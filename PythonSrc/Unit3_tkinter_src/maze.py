@@ -223,7 +223,7 @@ def search_for_solution(problem):
  
 
 if __name__ == '__main__':
-    maze = Problem('winding.maze')
+    maze = Problem('winding_maze.txt')
     maze.print_maze()
     solns = search_for_solution(maze)
     print('Number of solutions found: {0:d}'.format(len(solns)))
